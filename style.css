@@ -3,7 +3,7 @@ body{
     padding:0;
 }
 #layout{
-    background-color: yellow; 
+    /* background-color: yellow;  */
     height:100vh;
     width: 100vw;
     overflow-x: hidden;
@@ -11,7 +11,7 @@ body{
 }
 
 .page{
-    height:100vh;
+    min-height:100vh;
     width: 100vw;
     overflow: hidden;
     display:flex;
@@ -19,20 +19,37 @@ body{
 }
 
 #homepage{
-   background-color: rgb(39, 150, 241); 
+   /* background-color: rgb(39, 150, 241);  */
+   background-color:rgba(1,169,255,255)
 }
 
 .container{
     width:80%;
-    background-color: orange;
+    /* background-color: orange; */
 }
 
 #navbar{
     height:50px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    background-color: aqua;
+    color:white;
+    font-family:system-ui, sans-serif;
+    /* background-color: aqua; */
+}
+#logo p{
+    font-size: 18px;
+    font-weight: 600;
+    color:white;
+    font-family:system-ui, sans-serif;
+}
+#navigation p{
+    font-size: 16px;
+    font-weight: 400;
+    color:rgb(225, 219, 219);
+    font-family:system-ui, sans-serif;
+    text-align: right;
+    cursor: pointer;
 }
 
 .content{
@@ -40,14 +57,292 @@ body{
     justify-content: flex-start;
     align-items: center;
     height: 100%;
-    background-color: rgb(95, 235, 95);
+    /* background-color: rgb(95, 235, 95); */
 }
 
 #left{
     width:45%;
 }
 #left p{
-    font-size: 35px;
+    font-size:38px;
+    font-weight: 200;
     color:white;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:system-ui, sans-serif;
+    text-align: left;
+}
+#left #invite input{
+    font-size: 16px;
+    font-weight: 400;
+    color:grey;
+    font-family:system-ui, sans-serif;
+    text-align: left;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+}
+
+#left #invite button{
+    font-size: 16px;
+    font-weight: 200;
+    color:white;
+    font-family:system-ui, sans-serif;
+    text-align: left;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    background-color: rgb(0, 123, 255);
+    cursor: pointer;
+}
+
+#right{
+    width:55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#right img{
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    max-height: 500px;
+    border-radius: 10px;
+}
+
+#features{
+  background-color: #f9f9fb;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.features-heading h1 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+.features-heading p {
+  font-size: 16px;
+  color: #666;
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
+.features-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.feature-box {
+  background: transparent;
+  max-width: 300px;
+  padding: 20px;
+  text-align: center;
+}
+
+.icon-circle {
+  width: 70px;
+  height: 70px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  margin: 0 auto 15px;
+  color: rgb(39, 150, 241);
+}
+
+.feature-box h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+.feature-box p {
+  font-size: 14px;
+  color: #666;
+}
+
+.email-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom : 20px;
+  flex-wrap: wrap;
+}
+
+.email-form input {
+  padding: 12px 20px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 250px;
+  max-width: 100%;
+  outline: none;
+}
+
+.email-form button {
+  padding: 12px 20px;
+  background-color: #fbb040;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.email-form button:hover {
+  background-color: #f99f00;
+}
+
+#responsive{
+  background-color: #f9f9fb;
+  padding: 60px 20px;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+#team{
+  background-color: #f9f9fb;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+#team-container{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-card{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width:300px;
+  margin: 5px;
+}
+.team-card .member-image{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.team-card h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+.team-card p {
+  font-size: 14px;
+  color: #666;
+}
+
+.social-icons{
+  display: flex;
+  justify-content: center;
+}
+.icon{
+  width: 20px;
+  height:20px;
+  border-radius: 50%;
+  margin:3px
+}
+
+#contact {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  background-color: #f5f5f5;
+  box-sizing: border-box;
+}
+
+.contact-wrapper {
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+}
+
+.contact-wrapper h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  padding:10px;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  resize: none;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #999;
+  outline: none;
+}
+
+.contact-form button {
+  background-color: #fbb040;
+  color: white;
+  padding: 12px 0;
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #f99f00;
+}
+
+
+@media screen and (max-width: 768px) {
+    .content{
+        display:flex;
+        flex-direction: column;
+    }
+    #left {
+        width: 100%;
+        height: 40vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center ;
+    }
+    #right {
+        margin-top: 8px;
+        width: 100%;
+    }
+    #contact{
+       align-items: center;
+    }
 }
