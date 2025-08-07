@@ -1,0 +1,53 @@
+body{
+    margin:0;
+    padding:0;
+}
+#layout{
+    background-color: yellow; 
+    height:100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.page{
+    height:100vh;
+    width: 100vw;
+    overflow: hidden;
+    display:flex;
+    justify-content: center;
+}
+
+#homepage{
+   background-color: rgb(39, 150, 241); 
+}
+
+.container{
+    width:80%;
+    background-color: orange;
+}
+
+#navbar{
+    height:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+}
+
+.content{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    background-color: rgb(95, 235, 95);
+}
+
+#left{
+    width:45%;
+}
+#left p{
+    font-size: 35px;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+}
